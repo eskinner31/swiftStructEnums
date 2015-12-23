@@ -2,6 +2,8 @@
 
 import UIKit
 
+
+//Enum with default value of pending
 enum Status {
     case Doing
     case Pending
@@ -13,12 +15,21 @@ enum Status {
     
 }
 
+
+
+
 struct Task {
     var description: String
     
-    var status = Status()
+    var status = Status() //status is initialized in this struct
     
     init(description: String){
         self.description = description
     }
 }
+
+var car = Task(description: "Get the Oil Changed")
+
+print(car)
+
+
